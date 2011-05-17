@@ -1,0 +1,18 @@
+INSERT INTO "geometry_columns" 
+(f_table_name, f_geometry_column, type, coord_dimension, srid, spatial_index_enabled) 
+VALUES
+("lines_help", "geometry", "LINESTRING", 2, 0, 0)
+
+
+
+CREATE TABLE lines_main (
+PK_UID INTEGER PRIMARY KEY AUTOINCREMENT,
+layer_id INTEGER,
+length DOUBLE,
+geometry GEOMETRY)
+
+
+INSERT INTO "geometry_columns" 
+(f_table_name, f_geometry_column, type, coord_dimension, srid, spatial_index_enabled) 
+VALUES
+("lines_main", "geometry", "LINESTRING", 2, 0, 0)

@@ -1,0 +1,11 @@
+<RCC>
+
+    <qresource prefix="/plugins/dimensioning" >
+        <file>icons/select2vertex.png</file>
+    </qresource>    
+ 
+    <qresource prefix="/plugins/dimensioning" >
+        <file>icons/dimensioning.png</file>
+    </qresource>   
+    
+</RCC>
