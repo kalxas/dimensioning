@@ -22,3 +22,8 @@ Known Issues
 
 * It won't work with on-the-fly transformation enabled.
 * Everything is static. Once you created the lines the won't move if you change the points/vertex they are assigned to.
+
+References
+==========
+
+* http://lists.osgeo.org/pipermail/qgis-user/2011-May/012078.html
