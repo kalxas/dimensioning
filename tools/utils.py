@@ -53,7 +53,9 @@ def getLayerByName(layername):
 def createHelpFeature(geom, main_from, layer_id):
         feat = QgsFeature()
         feat.setGeometry(geom)
-        feat.setAttributeMap({ 1 : QVariant(main_from),  2 : QVariant(layer_id)})
+        feat.initAttributes(2)
+        feat.setAttribute(0,main_from)
+        feat.setAttribute(1,layer_id)
         
         return feat
 
@@ -61,7 +63,9 @@ def createHelpFeature(geom, main_from, layer_id):
 def createMainFeature(geom, layer_id, length):
         feat = QgsFeature()
         feat.setGeometry(geom)
-        feat.setAttributeMap({ 1 : QVariant(layer_id),  2 : QVariant(length)})
+        feat.initAttributes(2)
+        feat.setAttribute(0,layer_id)
+        feat.setAttribute(1,length)
         
         return feat
            
