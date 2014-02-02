@@ -34,7 +34,7 @@ class DimensioningGui(QDialog, QObject, Ui_Dimensioning):
     @pyqtSignature("on_btnAdd_clicked()")    
     def on_btnAdd_clicked(self):
         self.emit(SIGNAL("dimensioningOffsets(double, double, double, int, bool)"), self.sboxLength.value(), self.sboxStartOffset.value(),  self.sboxEndOffset.value(), self.sboxLayerId.value(),  self.chckBoxInvert.isChecked())        
-        self.settings.setValue("gui/layerid", QVariant( self.sboxLayerId.value() ) )             
+        self.settings.setValue("gui/layerid", self.sboxLayerId.value() )             
 #        self.close()
         
     @pyqtSignature("on_btnCancel_clicked()")    
