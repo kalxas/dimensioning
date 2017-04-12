@@ -32,7 +32,7 @@ def addGeometryToDimensionLayer(feat, type):
         pr = vl.dataProvider()
         pr.addFeatures([feat])
         vl.updateExtents()
-        QgsMapLayerRegistry().instance().addMapLayer(vl, True)
+        QgsMapLayerRegistry.instance().addMapLayer(vl, True)
     else:
         layer = getLayerByName(layerName) 
         pr = layer.dataProvider()
